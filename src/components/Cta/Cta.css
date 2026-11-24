@@ -1,0 +1,110 @@
+/* Fundo da seção com gradiente radial (mais claro no centro) */
+.cta-section {
+  background: radial-gradient(circle at center, #082d5e 0%, #021B3A 100%);
+  width: 100%;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- BADGE SUPERIOR --- */
+.cta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.05); /* Fundo levemente transparente */
+  border: 1px solid #2A4E7A; /* Borda sutil azulada */
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #E0E6ED;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #F29111; /* Laranja */
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* --- TÍTULO --- */
+.cta-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+/* --- DESCRIÇÃO --- */
+.cta-description {
+  font-size: 1.1rem;
+  color: #A0B2C6; /* Cinza azulado claro */
+  line-height: 1.5;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+/* --- BOTÃO --- */
+.cta-btn {
+  background-color: #00E676; /* Verde vibrante */
+  color: #021B3A; /* Texto azul escuro */
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 800;
+  padding: 18px 40px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 25px;
+}
+
+.cta-btn:hover {
+  background-color: #00C853; /* Verde mais escuro no hover */
+  transform: translateY(-2px);
+}
+
+/* --- TELEFONE --- */
+.cta-phone {
+  font-size: 0.9rem;
+  color: #A0B2C6;
+  font-weight: 400;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+  .cta-section {
+    padding: 60px 20px;
+  }
+
+  .cta-title {
+    font-size: 2.5rem;
+  }
+
+  .cta-description {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    font-size: 1rem;
+    padding: 15px 30px;
+    width: 100%;
+    max-width: 300px;
+  }
+}

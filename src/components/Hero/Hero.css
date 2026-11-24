@@ -1,0 +1,204 @@
+/* Fundo da seção */
+.hero-section {
+  background: radial-gradient(circle at 70% 50%, #093A7A 0%, #021B3A 80%);
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  padding: 60px 20px;
+}
+
+/* Formas de fundo */
+.bg-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-shapes svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Container principal */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* --- LADO ESQUERDO --- */
+.hero-left {
+  flex: 1;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-title {
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-white {
+  color: #FFFFFF;
+}
+
+.title-orange {
+  color: #F29111;
+  text-shadow: 0 0 20px rgba(242, 145, 17, 0.4); /* Brilho sutil no laranja */
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.hero-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #E0E6ED;
+}
+
+.hero-btn {
+  background-color: #F29111;
+  color: #021B3A;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.1rem;
+  padding: 15px 30px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.hero-btn:hover {
+  background-color: #FFA733;
+  transform: translateY(-2px);
+}
+
+.hero-disclaimer {
+  font-size: 0.75rem;
+  color: #8899A6;
+  margin-top: 20px;
+}
+
+/* --- LADO DIREITO --- */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  border-radius: 20px;
+  border: 2px solid #4A90E2;
+  box-shadow: 0 0 30px rgba(74, 144, 226, 0.3);
+  overflow: hidden;
+  width: 100%;
+  max-width: 550px;
+  aspect-ratio: 4/3;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Card de Preço sobreposto */
+.price-card {
+  position: absolute;
+  bottom: -20px;
+  left: -30px;
+  background-color: #F29111;
+  padding: 15px 25px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  transform: rotate(-2deg); /* Leve inclinação */
+}
+
+.price-label {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #021B3A;
+  letter-spacing: 0.5px;
+}
+
+.price-value {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #021B3A;
+  line-height: 1;
+}
+
+.price-period {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #021B3A;
+}
+
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-left {
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-right {
+    width: 100%;
+  }
+
+  .price-card {
+    left: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  .price-value {
+    font-size: 2rem;
+  }
+}

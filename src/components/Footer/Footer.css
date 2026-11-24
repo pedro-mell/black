@@ -1,0 +1,38 @@
+.footer-section {
+  background-color: #011227; /* Azul mais escuro que o fundo principal para dar profundidade */
+  border-top: 1px solid #1A3A5C; /* Linha sutil no topo */
+  padding: 25px 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #A0B2C6; /* Texto cinza azulado claro */
+  font-size: 0.85rem;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+  gap: 15px;
+}
+
+/* Links */
+.footer-link {
+  color: #A0B2C6;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #FFFFFF;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 900px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
